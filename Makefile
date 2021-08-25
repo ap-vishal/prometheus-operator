@@ -9,8 +9,8 @@ else
 endif
 
 GO_PKG=github.com/prometheus-operator/prometheus-operator
-IMAGE_OPERATOR?=quay.io/prometheus-operator/prometheus-operator
-IMAGE_RELOADER?=quay.io/prometheus-operator/prometheus-config-reloader
+IMAGE_OPERATOR?=455799260468.dkr.ecr.eu-central-1.amazonaws.com/prometheus-operator
+IMAGE_RELOADER?=455799260468.dkr.ecr.eu-central-1.amazonaws.com/prometheus-config-reloader
 TAG?=$(shell git rev-parse --short HEAD)
 VERSION?=$(shell cat VERSION | tr -d " \t\n\r")
 
